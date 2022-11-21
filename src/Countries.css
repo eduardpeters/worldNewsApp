@@ -3,16 +3,18 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #000814;
+    border-radius: 50px;
     margin: 5px;
+    color: #001d3d;
 }
 
 .countrySelector > p:hover {
-    color: blue;
+    color: #4aa6fc;
 }
 
 .selectedCountry {
     text-decoration: underline;
     font-weight: bold;
-    color: green;
+    color: #ffc300;
 }

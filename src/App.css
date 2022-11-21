@@ -6,11 +6,13 @@
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 36px;
+    color: #003566;
 }
 
 .header {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: white;
+    background-color: #ffffff;
+    padding: 5px;
 }

@@ -1,21 +1,25 @@
 .newsContainer {
-    border: 1px solid black;
+    border: 1px solid #000814;
+    border-radius: 10px;
     margin: 5px;
     padding: 10px;
+    color: #001d3d;
 }
 
 .newsContainer > h3 {
     font-size: 24px;
+    color: #001d3d;
 }
 
 button {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
     width: 100px;
 }
 
 button:hover {
-    background-color: aliceblue;
+    opacity: 0.8;
+    background-color: #4aa6fc;
 }
 
 .detailsContainer {
@@ -34,13 +38,13 @@ button:hover {
 }
 
 .infoContainer > p {
-    color: lightslategray;
+    color: #778899;
     font-size: 20px;
     text-align: justify;
 }
 
 .inlineStyling {
-    color: black;
+    color: #000814;
 }
 
 .excerptContainer > img {
