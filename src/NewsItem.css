@@ -26,11 +26,14 @@ button:hover {
 .excerptContainer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.infoContainer {
+    width: 40%;
 }
 
 .infoContainer > p {
-    width: 40%;
     color: lightslategray;
     font-size: 20px;
     text-align: justify;
@@ -43,12 +46,13 @@ button:hover {
 .excerptContainer > img {
     width: 250px;
     height: 250px;
+    margin: 25px;
 }
 
 .navigationContainer {
     height: 50px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
 }
