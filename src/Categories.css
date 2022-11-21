@@ -1,0 +1,18 @@
+.categorySelector {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.categorySelector > p:hover {
+    color: blue;
+}
+
+.selectedCategory {
+    text-decoration: underline;
+    font-weight: bold;
+    color: green;
+}

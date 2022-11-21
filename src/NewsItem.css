@@ -1,0 +1,54 @@
+.newsContainer {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+.newsContainer > h3 {
+    font-size: 24px;
+}
+
+button {
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.excerptContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.infoContainer > p {
+    width: 40%;
+    color: lightslategray;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.inlineStyling {
+    color: black;
+}
+
+.excerptContainer > img {
+    width: 250px;
+    height: 250px;
+}
+
+.navigationContainer {
+    height: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}

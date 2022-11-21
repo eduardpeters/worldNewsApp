@@ -1,0 +1,18 @@
+.countrySelector {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.countrySelector > p:hover {
+    color: blue;
+}
+
+.selectedCountry {
+    text-decoration: underline;
+    font-weight: bold;
+    color: green;
+}
