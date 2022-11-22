@@ -4,6 +4,7 @@ import '../styles/App.css';
 import Countries from "./Countries.js"
 import Categories from "./Categories.js"
 import Headlines from "./Headlines.js";
+import FirstHeadlines from "./FirstHeadlines.js"
 
 function App() {
     const API_KEY = process.env.REACT_APP_API_KEY;
@@ -37,7 +38,8 @@ function App() {
                 <Countries country={country} setCountry={setCountry} />
                 <Categories category={category} setCategory={setCategory} />
             </div>
-            <Headlines topNews={topNews}/>
+            <FirstHeadlines topNews={topNews.slice(0, 6)} />
+            <Headlines topNews={topNews.slice(7,)}/>
         </div>
     );
 }
