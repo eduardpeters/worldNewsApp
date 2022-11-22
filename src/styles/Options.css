@@ -1,4 +1,4 @@
-.categorySelector {
+.optionSelector {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -9,11 +9,11 @@
     color: #001d3d;
 }
 
-.categorySelector > p:hover {
+.optionSelector > p:hover {
     color: #4aa6fc;
 }
 
-.selectedCategory {
+.selectedOption {
     text-decoration: underline;
     font-weight: bold;
     color: #ffc300;

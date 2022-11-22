@@ -1,18 +1,18 @@
 import { useEffect } from "react";
-import "./Categories.css";
+import "../styles/Options.css";
 
 const Categories = ({category, setCategory}) => {
     const categoryList = ["General", "Business", "Entertainment", "Health", "Science", "Sports", "Technology"];
 
     useEffect(() => {
-            document.getElementById(category).classList.add("selectedCategory");
+            document.getElementById(category).classList.add("selectedOption");
     }, [category]);
 
     const updateHighlight = (oldCat, newCat) => {
         const oldP = document.getElementById(oldCat);
         const newP = document.getElementById(newCat);
-        oldP.classList.remove("selectedCategory");
-        newP.classList.add("selectedCategory");
+        oldP.classList.remove("selectedOption");
+        newP.classList.add("selectedOption");
     }
 
     const handleCategoryClick = event => {
@@ -24,7 +24,7 @@ const Categories = ({category, setCategory}) => {
     }
 
     return (
-        <div className="categorySelector">
+        <div className="optionSelector">
             <h3>Category selection:</h3>
             {categoryList.map((name) =>
                 <p key={name} id={name.toLowerCase()} className="category" onClick={handleCategoryClick}>

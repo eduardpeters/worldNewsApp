@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./NewsItem.css"
+import "../styles/NewsItem.css"
 
 const NewsDetails = ({news, showMore, setShowMore}) => {
     return (

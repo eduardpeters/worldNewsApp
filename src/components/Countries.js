@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import "./Countries.css";
+import "../styles/Options.css";
 
 const Countries = ({country, setCountry}) => {
     const countryList = ["USA", "Germany", "France", "UK", "Japan"];
 
     useEffect(() => {
-        document.getElementById(getCountryName(country)).classList.add("selectedCountry");
+        document.getElementById(getCountryName(country)).classList.add("selectedOption");
     }, [country]);
 
     const getCountryName = code => {
@@ -45,8 +45,8 @@ const Countries = ({country, setCountry}) => {
     const updateHighlight = (oldCode, newCode) => {
         const oldP = document.getElementById(getCountryName(oldCode));
         const newP = document.getElementById(getCountryName(newCode));
-        oldP.classList.remove("selectedCountry");
-        newP.classList.add("selectedCountry");
+        oldP.classList.remove("selectedOption");
+        newP.classList.add("selectedOption");
     }
 
     const handleCountryClick = event => {
@@ -59,7 +59,7 @@ const Countries = ({country, setCountry}) => {
     }
 
     return (
-        <div className="countrySelector">
+        <div className="optionSelector">
             <h3>Country selection:</h3>
             {countryList.map((name) =>
                 <p key={name} id={name} className="country" onClick={handleCountryClick}>

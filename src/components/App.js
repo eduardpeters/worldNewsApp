@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import './App.css';
+import '../styles/App.css';
 import Countries from "./Countries.js"
 import Categories from "./Categories.js"
 import Headlines from "./Headlines.js";
