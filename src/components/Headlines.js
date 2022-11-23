@@ -1,3 +1,4 @@
+import "../styles/Headlines.css"
 import NewsItem from "./NewsItem";
 
 const Headlines = ({topNews}) => {

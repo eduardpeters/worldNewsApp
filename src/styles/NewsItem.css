@@ -1,4 +1,5 @@
 .newsContainer {
+    width: 45%;
     border: 1px solid #000814;
     border-radius: 10px;
     margin: 5px;
@@ -7,7 +8,7 @@
 }
 
 .newsContainer > h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: #001d3d;
 }
 
@@ -39,7 +40,7 @@ button:hover {
 
 .infoContainer > p {
     color: #778899;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -48,9 +49,9 @@ button:hover {
 }
 
 .excerptContainer > img {
-    width: 250px;
-    height: 250px;
-    margin: 25px;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
 }
 
 .navigationContainer {
