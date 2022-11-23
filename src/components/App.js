@@ -7,7 +7,7 @@ import Headlines from "./Headlines.js";
 import FirstHeadlines from "./FirstHeadlines.js"
 
 function App() {
-    const API_KEY = process.env.REACT_APP_API_KEY;
+    const largeNewsItemsLimit = 6;
     const [topNews, setTopNews] = useState([]);
     const [country, setCountry] = useState("us");
     const [category, setCategory] = useState("general");
@@ -19,7 +19,7 @@ function App() {
             try {
                 const response = await axios.get(URI, {
                     headers: {
-                        "Authorization": API_KEY
+                        "Authorization": process.env.REACT_APP_API_KEY
                     }
                 });
                 setTopNews(response.data.articles);
@@ -29,17 +29,17 @@ function App() {
             }
         };
         getTopNews();
-    }, [API_KEY, country, category]);
+    }, [country, category]);
     console.log(topNews);
     return (
         <div className="App">
+            <h1>Headlines from around the world</h1>
             <div className="header">
-                <h1>Headlines from around the world</h1>
                 <Countries country={country} setCountry={setCountry} />
                 <Categories category={category} setCategory={setCategory} />
             </div>
-            <FirstHeadlines topNews={topNews.slice(0, 6)} />
-            <Headlines topNews={topNews.slice(7,)}/>
+            <FirstHeadlines topNews={topNews.slice(0, largeNewsItemsLimit)} />
+            <Headlines topNews={topNews.slice(largeNewsItemsLimit + 1,)}/>
         </div>
     );
 }

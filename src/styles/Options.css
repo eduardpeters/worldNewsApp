@@ -11,6 +11,7 @@
 
 .optionSelector > p:hover {
     color: #4aa6fc;
+    cursor: pointer;
 }
 
 .selectedOption {
