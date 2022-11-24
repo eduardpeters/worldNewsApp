@@ -1,0 +1,11 @@
+.weatherContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #000814;
+    border-radius: 25px;
+    margin: 10px;
+    color: #001d3d;
+    font-size: 12px;
+}

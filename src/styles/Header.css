@@ -1,0 +1,14 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.optionsContainer {
+    width: 80%;
+}

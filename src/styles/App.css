@@ -8,11 +8,3 @@ h1 {
     font-size: 36px;
     color: #003566;
 }
-
-.header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 5px;
-}
