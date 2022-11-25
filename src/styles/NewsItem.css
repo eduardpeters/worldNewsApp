@@ -8,7 +8,7 @@
 }
 
 .newsContainer > h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #001d3d;
 }
 
@@ -40,7 +40,7 @@ button:hover {
 
 .infoContainer > p {
     color: #778899;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
 }
 

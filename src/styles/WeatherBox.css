@@ -8,12 +8,12 @@
     border-radius: 25px;
     margin: 10px;
     color: #001d3d;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .weatherContainer > p {
     color: #000814;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     text-decoration: underline;
 }
