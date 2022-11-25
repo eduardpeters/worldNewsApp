@@ -14,7 +14,7 @@ function App() {
     useEffect(() => {
         const getTopNews = async () => {
             const URI = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}`;
-            console.log(URI);
+            //console.log(URI);
             try {
                 const response = await axios.get(URI, {
                     headers: {
@@ -29,13 +29,18 @@ function App() {
         }
         getTopNews();
     }, [country, category]);
-    console.log(topNews);
+    //console.log(topNews);
     return (
         <div className="App">
-            <h1>Headlines from around the world</h1>
+            <h1>Today's News Digest</h1>
             <Header country={country} setCountry={setCountry} category={category} setCategory={setCategory}/>
-            <FirstHeadlines topNews={topNews.slice(0, largeNewsItemsLimit)} />
-            <Headlines topNews={topNews.slice(largeNewsItemsLimit + 1,)}/>
+            {topNews.length ?
+                <>
+                    <FirstHeadlines topNews={topNews.slice(0, largeNewsItemsLimit)} />
+                    <Headlines topNews={topNews.slice(largeNewsItemsLimit + 1,)}/>
+                </>
+            :   <div className="noNews">No news to display</div>
+            }
         </div>
     );
 }

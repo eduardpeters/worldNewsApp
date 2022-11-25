@@ -8,3 +8,9 @@ h1 {
     font-size: 36px;
     color: #003566;
 }
+
+.noNews {
+    font-family: monospace;
+    font-size: 36px;
+    color: #ff4500;
+}
